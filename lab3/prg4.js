@@ -1,7 +1,8 @@
 import http from "http";
 
 const server = http.createServer((req, res) => {
-  res.writeHead(200, { "Content-Type": "application/json" });
+  res.writeHead(200, { "content-type": "application/json" });
+  console.log("Client ULR:", req.url);
 
   const product = [
     {
@@ -11,16 +12,13 @@ const server = http.createServer((req, res) => {
       discount: 15,
     },
     {
-      name: "hp Laptop",
-      price: 55000,
+      name: "HP Laptop",
+      price: 95000,
       qty: 1,
       discount: 25,
     },
   ];
-
   res.end(JSON.stringify(product));
 });
 
-server.listen(3000, () => {
-  console.log("Server is running on port 3000...");
-});
+server.listen(3000, () => console.log("prg4 is running at 3000..."));

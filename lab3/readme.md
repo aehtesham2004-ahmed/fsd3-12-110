@@ -20,7 +20,7 @@ npm uninsatll <pakageName> =>uninstall any package
 to run node program => npm start
 to run nodeman program => npm run dev
 
-## HTTP status codes
+## HTTP status codes -> res.WriteHead( ), res.statusCode
 
 - 200 ->OK
 - 201 ->CREATED
@@ -29,3 +29,23 @@ to run nodeman program => npm run dev
 - 403 ->FORBIDDEN
 - 404 ->NOT FOUND
 - 500 ->INTERNAL SERVER ERROR
+ ### Server can send to the client
+
+1. html contents -> prg2,prg3
+2. html file -> prg5
+3. json data -> prg4
+4. plain file
+5. js file 
+6. any file to download
+7. etc
+
+
+## Type of information
+
+1. text/html -> for html file/contents
+2. text/json -> for json data
+3. text/css -> for css file/contents
+4. application -> for file 
+5. text/plain ->for plain text file
+
+### Note: .gitignor -> this files contains the list of files or folder that is not addded to git. these files/folder will not push on Github 
