@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iPhone 17</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#000;
+    color:white;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:#111;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00bfff;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:90vh;
+    padding:80px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h3{
+    color:#8a2be2;
+    font-size:28px;
+}
+
+.hero-text h1{
+    font-size:80px;
+    margin:20px 0;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:35px;
+    color:#d3d3d3;
+}
+
+.buttons{
+    margin-top:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:20px;
+}
+
+.primary{
+    background:#0071e3;
+    color:white;
+}
+
+.secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.hero img{
+    width:420px;
+}
+
+/* Features */
+
+.features{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:80px;
+background:#111;
+}
+
+.card{
+
+background:#1c1c1c;
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+background:#222;
+}
+
+.card h2{
+
+font-size:24px;
+margin-bottom:15px;
+color:#00bfff;
+}
+
+.card p{
+
+color:#ddd;
+}
+
+/* About */
+
+.about{
+
+padding:80px;
+text-align:center;
+}
+
+.about h1{
+
+font-size:55px;
+margin-bottom:20px;
+}
+
+.about p{
+
+width:70%;
+margin:auto;
+font-size:20px;
+line-height:35px;
+color:#ccc;
+}
+
+/* Specs */
+
+.specs{
+
+display:flex;
+justify-content:space-around;
+padding:60px;
+background:#111;
+}
+
+.spec{
+
+text-align:center;
+}
+
+.spec h2{
+
+font-size:45px;
+color:#00bfff;
+}
+
+.spec p{
+
+margin-top:10px;
+}
+
+/* Footer */
+
+footer{
+
+text-align:center;
+padding:30px;
+background:#000;
+border-top:1px solid #222;
+color:#aaa;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text{
+width:100%;
+}
+
+.hero img{
+margin-top:40px;
+width:300px;
+}
+
+.features{
+grid-template-columns:1fr;
+}
+
+.specs{
+flex-direction:column;
+gap:40px;
+}
+
+nav{
+padding:20px;
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo"> iPhone 17</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Design</a></li>
+<li><a href="#">Camera</a></li>
+<li><a href="#">Performance</a></li>
+<li><a href="#">Buy</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h3>Introducing</h3>
+
+<h1>iPhone 17</h1>
+
+<p>
+Powerful. Elegant. Intelligent.
+Experience the next generation smartphone
+with a stunning display, AI-powered camera,
+and all-day battery life.
+</p>
+
+<div class="buttons">
+
+<a href="#" class="btn primary">Buy Now</a>
+
+<a href="#" class="btn secondary">Learn More</a>
+
+</div>
+
+</div>
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=700" alt="Phone">
+
+</div>
+
+</section>
+
+<section class="features">
+
+<div class="card">
+
+<h2>A19 Chip</h2>
+
+<p>
+Ultra-fast performance with advanced AI processing.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>48MP Camera</h2>
+
+<p>
+Capture every detail with professional-quality photos.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>120Hz Display</h2>
+
+<p>
+Super Retina OLED display for an incredibly smooth experience.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Battery</h2>
+
+<p>
+Enjoy up to 30 hours of battery life on a single charge.
+</p>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h1>Built for the Future</h1>
+
+<p>
+
+The iPhone 17 combines premium design with cutting-edge technology.
+Featuring aerospace-grade aluminum, intelligent software, advanced
+security, and unmatched performance, it's designed for creators,
+professionals, and everyone in between.
+
+</p>
+
+</section>
+
+<section class="specs">
+
+<div class="spec">
+
+<h2>6.7"</h2>
+
+<p>OLED Display</p>
+
+</div>
+
+<div class="spec">
+
+<h2>48MP</h2>
+
+<p>Main Camera</p>
+
+</div>
+
+<div class="spec">
+
+<h2>A19</h2>
+
+<p>Bionic Chip</p>
+
+</div>
+
+<div class="spec">
+
+<h2>30hrs</h2>
+
+<p>Battery Life</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 iPhone 17 Landing Page | Designed with HTML & CSS
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
