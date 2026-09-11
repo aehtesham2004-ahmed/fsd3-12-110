@@ -4,3 +4,6 @@ let users = [
   { id: 1, name: "Amritansh Pandey", mob: "786567xxxx", email: "anlityadav@.com" },
 ]
 
+let nextId = 3;
+
+export const getAllUsers = (req, res) => users;

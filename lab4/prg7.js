@@ -1,5 +1,5 @@
 import http from "http";
-
+import {getAllUsers} from "./users.js";
 const server = http.createServer((req, res) => {
   if ((req.url === "/api/users", req.method === "GET")) {
     res.end(JSON.stringify({ msg: "all users" }));
