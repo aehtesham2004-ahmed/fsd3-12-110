@@ -21,3 +21,20 @@ script{
 
 - mojorly backend server return only data not html file 
 - 
+
+## Request Api
+1. GET - get all, get by id 
+- /api/products - print all product details
+- /api/products/101 - print the products details whose id is 101
+
+2. Post
+- /api/products - it add the products  
+
+3. PUT/PATCH
+- /api/products/201/
+   in echo API body {
+    what we have to change 
+   }
+
+4. DELETE
+- 
